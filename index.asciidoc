@@ -1,0 +1,185 @@
+*Blockchain* para desenvolvedores Java
+======================================
+Última atualização: {localdate}
+:title: dfjug1ano
+:description: Blockchain para desenvolvedores Java
+:copyright: CC BY-SA 2.0
+:uri-slides: blockchain4devs.github.io/{title}
+:imagesdir: images
+:backend: dzslides
+:linkcss: true
+:dzslides-style: stormy
+:dzslides-transition: fade
+:dzslides-fonts: family=Yanone+Kaffeesatz:400,700,200,300&family=Cedarville+Cursive
+:dzslides-highlight: monokai
+:syntax: no-highlight
+
+:o-que-e: pass:[<strong>O que é</strong>]
+:blockchain: pass:[<strong>Blockchain</strong>]
+:bitcoin: pass:[<strong>Bitcoin</strong>]
+:ethereum: pass:[<strong>Ethereum</strong>]
+:dev: pass:[<strong>Dev</strong>elopers]
+:java-dev: pass:[<strong>Java Dev</strong>]
+:refs: pass:[<strong>Refs</strong>]
+:hyperledger: pass:[<strong>Hyperledger</strong>]
+
+// agenda
+:topic1: {o-que-e} Blockchain?
+:topic2: Onde tudo começou? {bitcoin}
+:topic3: Como evoluiu? {ethereum}; {hyperledger}
+:topic4: Esmiuçando ... sob a ótica de {dev}
+:topic5: E para mim que sou {java-dev}? Por onde começo?
+:topic6: Referências ({refs}) para aprofundamento
+
+[{topic}]
+== {uri-slides}
+
+['qrcode', target='presentation-qrcode.png', size=20, alt='http://{uri-slides}', role='middle stretch-y', subs='attributes']
+----
+https://{uri-slides}
+----
+
+== \\
+
+[quote, Paulo Jerônimo]
+____
+Sério!! 😯  *Blockchain é uma revolução*! Se você ainda está por fora desse assunto, está perdendo o bonde (mais uma vez)!
+____
+
+== \\
+
+* Agenda:
+** <<5.0,{topic1}>>
+** <<7.0,{topic2}>>
+** <<10.0,{topic3}>>
+** <<17.0,{topic4}>>
+** <<17.0,{topic5}>>
+** <<17.0,{topic6}>>
+
+[{intro}]
+== {o-que-e}
+
+== \\
+
+* Explicando Blockchain para a sua avó ...
+** ... ou para qualquer pessoa que não seja tão nerd 🤓  como você!
+
+== \\
+
+* Explicando Blockchain de forma mais técnica, nerd (com código) e visual:
+** https://www.youtube.com/watch?v=_160oMzblY8[Blockchain 101 - A Visual Demo]
+*** Código no GitHub (fork): https://github.com/blockchain4devs/blockchain-demo
+
+[{intro}]
+== {bitcoin}
+
+== \\
+
+* {bitcoin} (rapidamente, slide 1/2)
+** É dinheiro (💲 )!
+** Como compra/vende? (https://bitcoin.org/en/exchanges[Casas de câmbio], https://localbitcoins.com/[direto com outras pessoas])
+** Como ele surge? https://www.youtube.com/watch?v=GmOzih6I1zs[(Mineração)]
+** Onde se guarda? https://bitcoin.org/pt_BR/escolha-sua-carteira[(Carteiras)]
+*** https://bitcoin.org/pt_BR/proteja-sua-carteira[Protegendo sua carteira]
+*** Caso dramático: https://goo.gl/AvxpyL[Como salvei meus bitcoins após passar por pânico e insegurança ao manuseá-los na carteira MultiBit]
+**** Uma aplicação Java me salvou! 😃
+
+== \\
+
+* {bitcoin} (rapidamente, slide 2/2)
+** Como se usa (https://bitcoin.org/en/spend-bitcoin[ou se gasta])? (Na rua, na Internet, ...)
+** Como se troca por "dinheiro de plástico" (em cartões de crédito)? https://advcash.com[Advcash], https://xapo.com/[Xapto], https://mona.co/[Monaco], ...
+** Como realmente se ganha dinheiro com Bitcoins? (Trading? 🤔 ) https://poloniex.com[Poloniex], https://www.gdax.com/[GDAX], ...
+** Bons canais no Youtube com informações relevantes (e realmente de qualidade) em nossa língua?
+*** https://www.youtube.com/channel/UCLJkh3QjHsLtK0LZFd28oGg[Fernando Ulrich]
+
+[{intro}]
+== {ethereum}
+
+== \\
+
+* {ethereum}
+** É dinheiro (💲 )!
+** A moeda é chamada de Ether
+** Permite a construção de aplicações descentralizadas (DApps)
+*** Mão na massa (prática) nos próximos slides
+
+[{intro}]
+== *Hyper ledger*
+
+== \\
+
+* {hyperledger}
+** Site: http://hyperledger.com
+** Iniciativa da Linux Foundation
+*** Apoiada pela IBM e https://www.hyperledger.org/about/members/vendor-directory[vários outros]
+
+[{intro}]
+== {dev} (com a mão na massa)
+
+== \\
+
+* {ethereum} - como construir uma Dapp
+
+[{intro}]
+== {java-dev}
+
+== \\
+
+* https://web3j.io/[web3j]: Web3 Java Ethereum Ðapp API
+
+[{intro}]
+== {refs}
+
+== \\
+
+* {refs} para aprofundamento
+** Livro: https://www.senaispeditora.com.br/catalogo/olhar-para-a-industria/blockchain-revolution/[Blockchain Revolution (versão traduzida)]
+** {blockchain} - conceitos, aplicações, bla, bla, bla ...
+*** 1. https://www.youtube.com/watch?v=93E_GzvpMA0[What is Blockchain]
+*** 2. https://www.youtube.com/watch?v=SPyIy61Lnrw[Uses of the Blockchain]
+*** 3. https://www.youtube.com/watch?v=Pl8OlkkwRpc[How the blockchain is changing money and business | Don Tapscott]
+*** 4. https://www.youtube.com/watch?v=WnEYakUxsHU[Blockchain is Eating Wall Street | Alex Tapscott | TEDxSanFrancisco]
+*** 5. https://www.youtube.com/watch?v=3PdO7zVqOwc[Alex Tapscott: "Blockchain Revolution" | Talks at Google]
+
+== \\
+
+* {refs} para aprofundamento
+** {blockchain} - com animaçõeszinhas
+*** 1. https://www.youtube.com/watch?v=r43LhSUUGTQ[Understand the Blockchain in Two Minutes]
+*** 2. https://www.youtube.com/watch?v=lD9KAnkZUjU[IBM Think Academy: Blockchain, How it works]
+*** 3. https://www.youtube.com/watch?v=LdOcXXB48fI[Blockchain Demystified]
+*** 4. https://www.youtube.com/watch?v=C3OTJ1AdraY[The Block Chain - The Basics]
+
+== \\
+
+* {refs} para aprofundamento
+** {blockchain} - explicado de forma mais técnica
+*** 1. https://www.youtube.com/watch?v=_160oMzblY8[Blockchain 101 - A Visual Demo]
+**** Código no GitHub (fork): https://github.com/blockchain4devs/blockchain-demo
+*** 2. https://www.youtube.com/watch?v=GMKgB3zZ1so[How Bitcoin Works in 5 Minutes. (Technical)]
+*** 3. https://www.youtube.com/watch?v=Lx9zgZCMqXE[How Bitcoin Works Under the Hood]
+
+== \\
+
+* {refs} para aprofundamento
+** {ethereum} - conceitos básicos
+*** 1. https://www.youtube.com/watch?v=vam0ZjAy3Rw[What is Ethereum? [For Beginners\]]
+*** 2. https://www.youtube.com/watch?v=U_LK0t_qaPo[DEVCON1: Ethereum for Dummies - Dr. Gavin Wood]
+*** 3. https://www.youtube.com/watch?v=0ilYnuP1qd4[Joseph Lubin - The Basics of Blockchain and Etherum]
+** {ethereum} - explicado de forma mais técnica
+*** 1. https://www.youtube.com/watch?v=-SMliFtoPn8[Dan's Intro to How Ethereum Works]
+** {ethereum} vs {bitcoin} - explicado de forma concisa
+*** 1. https://www.youtube.com/watch?v=ptLfwp6JYgk[What is Ethereum? A Simple Explanation Anyone Can Understand]
+
+== \\
+
+* {refs} para aprofundamento
+** {hyperledger} - para desenvolvedores Java
+*** https://www.ibm.com/developerworks/library/j-chaincode-for-java-developers/index.html[Blockchain chaincode for Java developers]
+
+[{ending}, hrole="name"]
+== That's all! *Código desses slides:*
+
+[role="footer"]
+https://github.com/blockchain4devs/dfjug1ano

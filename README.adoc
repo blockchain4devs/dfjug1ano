@@ -1,0 +1,29 @@
+= Slides da apresentação "Blockchain para desenvolvedores Java"
+
+== Como construir e visualizar esses slides localmente
+
+Instale o http://www.methods.co.nz/asciidoc/[asciidoc].
+
+Clone https://github.com/blockchain4devs/blockchain4javadevs[este repositório] e vá para o seu diretório.
+
+Abra um shell Bash e execute:
+
+----
+$ repo=https://github.com/blockchain4devs/blockchain4javadevs
+$ git clone $repo && cd ${repo##*/}
+----
+
+Dentro do diretório `blockchain4javadevs`, clone o repositório https://github.com/paulojeronimo/asciidoc-builder[asciidoc-builder repo] como `builder`:
+
+----
+$ git clone https://github.com/paulojeronimo/asciidoc-builder builder
+----
+
+Execute os seguintes comandos:
+
+----
+$ ./builder/dzslides/build
+$ ./builder/dzslides/build server
+----
+
+Abra seu browser em http://localhost:8080
