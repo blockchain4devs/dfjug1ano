@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html class="aspect-4-3">
+  <head>
+    <meta charset="utf-8">
+    <title>dfjug1ano</title>
+    <meta name="description" content="Blockchain para desenvolvedores Java">
+    <meta name="author" content="Última atualização: 2017-07-03">
+    <meta name="copyright" content="CC BY-SA 2.0">
+    <meta name="generator" content="AsciiDoc 8.6.9, dzslides backend. Code highlighting courtesy of highlight.js.">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700,200,300&amp;family=Cedarville+Cursive">
+    <link rel="stylesheet" href="./dzslides/themes/highlight/monokai.css">
+    <link rel="stylesheet" href="./dzslides/themes/style/stormy.css">
+    <style>
+section:not(.topic) > h2 {
+  display: none;
+}
+    </style>
+    <!-- bug in full screen image if include dzslides.css before ours -->
+    <link rel="stylesheet" href="./dzslides/core/dzslides.css">
+    <link rel="stylesheet" href="./dzslides/themes/transition/fade.css">
+  </head>
+  <body>
+    <section class="title">
+      <h1><strong>Blockchain</strong> para desenvolvedores Java</h1>
+      <footer>Última atualização: 2017-07-03</footer>
+    </section>
+<section class="topic">
+<h2>blockchain4devs.github.io/dfjug1ano</h2>
+<img src="images/presentation-qrcode.png" alt="http://blockchain4devs.github.io/dfjug1ano" class="middle stretch-y">
+</section>
+<section>
+<blockquote>
+<p>Sério!! <strong>Blockchain é uma revolução</strong>! Se você, ainda, está por fora desse assunto está perdendo o bonde (mais uma vez 😯 )!</p>
+<br><cite>Paulo Jerônimo</cite></blockquote>
+</section>
+<section>
+<ul>
+<li>
+Agenda:
+<ul>
+<li>
+<a href="#5.0"><strong>O que é</strong> Blockchain?</a>
+</li>
+<li>
+<a href="#8.0">Onde tudo começou? <strong>Bitcoin</strong></a>
+</li>
+<li>
+<a href="#12.0">Como evoluiu? <strong>Ethereum</strong>; <strong>Hyperledger</strong></a>
+</li>
+<li>
+<a href="#17.0">Esmiuçando &#8230; sob a ótica de <strong>Dev</strong>elopers</a>
+</li>
+<li>
+<a href="#19.0">E para mim que sou <strong>Java Dev</strong>? Por onde começo?</a>
+</li>
+<li>
+<a href="#21.0">Mais referências (<strong>Refs</strong>) para aprofundamento</a>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="topic intro">
+<h2><strong>O que é</strong></h2>
+</section>
+<section>
+<ul>
+<li>
+Explicando Blockchain para a sua avó &#8230;
+<ul>
+<li>
+&#8230; ou para qualquer pessoa que não seja tão nerd 🤓  como você!
+<ul>
+<li>
+<a href="https://www.youtube.com/watch?v=93E_GzvpMA0">What is Blockchain</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section>
+<ul>
+<li>
+Explicando Blockchain de forma mais técnica, nerd (com código) e visual:
+<ul>
+<li>
+<a href="https://www.youtube.com/watch?v=_160oMzblY8">Blockchain 101 - A Visual Demo</a>
+<ul>
+<li>
+Código no GitHub (fork): <a href="https://github.com/blockchain4devs/blockchain-demo">https://github.com/blockchain4devs/blockchain-demo</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="topic intro">
+<h2><strong>Bitcoin</strong></h2>
+</section>
+<section>
+<ul>
+<li>
+<strong>Bitcoin</strong> (rapidamente, slide 1/3)
+<ul>
+<li>
+É dinheiro (💲 )!
+</li>
+<li>
+Como compra/vende? (<a href="https://bitcoin.org/en/exchanges">Casas de câmbio</a>, <a href="https://localbitcoins.com/">direto com outras pessoas</a>)
+</li>
+<li>
+Como ele surge? <a href="https://www.youtube.com/watch?v=GmOzih6I1zs">(Mineração)</a>
+</li>
+<li>
+Onde se guarda? <a href="https://bitcoin.org/pt_BR/escolha-sua-carteira">(Carteiras)</a>
+<ul>
+<li>
+<a href="https://bitcoin.org/pt_BR/proteja-sua-carteira">Protegendo sua carteira</a>
+</li>
+<li>
+Caso dramático: <a href="https://goo.gl/AvxpyL">Como salvei meus bitcoins após passar por pânico e insegurança ao manuseá-los na carteira MultiBit</a>
+<ul>
+<li>
+Uma aplicação Java me salvou! 😃
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section>
+<ul>
+<li>
+<strong>Bitcoin</strong> (rapidamente, slide 2/3)
+<ul>
+<li>
+Como se usa (<a href="https://bitcoin.org/en/spend-bitcoin">ou se gasta</a>)? (Na rua, na Internet, &#8230;)
+</li>
+<li>
+Como se troca por "dinheiro de plástico" (em cartões de crédito)? <a href="https://advcash.com">Advcash</a>, <a href="https://xapo.com/">Xapto</a>, <a href="https://mona.co/">Monaco</a>, &#8230;
+</li>
+<li>
+Como realmente se ganha dinheiro com Bitcoins? (Trading? 🤔 ) <a href="https://poloniex.com">Poloniex</a>, <a href="https://www.gdax.com/">GDAX</a>, &#8230;
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section>
+<ul>
+<li>
+<strong>Bitcoin</strong> (rapidamente, slide 3/3)
+<ul>
+<li>
+Referências
+<ul>
+<li>
+<a href="https://www.youtube.com/watch?v=MDqjBQrnUFo">Introdução ao funcionamento do Bitcoin e Blockchain - #BitcoinRecife</a>
+<ul>
+<li>
+Palestra (<span class="monospaced">+ atual</span>, também do Marco Carnut): <a href="https://www.youtube.com/watch?v=Th5dyY2ttbI">Panorama Blockchain &amp; Bitcoin</a>
+</li>
+</ul>
+</li>
+<li>
+1º Seminário FGV sobre Moedas Digitais
+<ul>
+<li>
+Vídeos:
+<a href="https://www.youtube.com/watch?v=8seRgSLJfAQ">1</a>,
+<a href="https://www.youtube.com/watch?v=a5A9lcbKL8c">2</a>,
+<a href="https://www.youtube.com/watch?v=LGnwiJB8Kdo">3</a>,
+<a href="https://www.youtube.com/watch?v=iUwO-VZklCk">4</a>
+</li>
+<li>
+<a href="https://bitcointalk.org/index.php?topic=1253598.5">Agenda do evento (ocorrido em 24/Nov/2015)</a>
+</li>
+</ul>
+</li>
+<li>
+Bons canais no Youtube (em pt-br)?
+<ul>
+<li>
+<a href="https://www.youtube.com/channel/UCLJkh3QjHsLtK0LZFd28oGg">Fernando Ulrich</a> (Autor do livro <a href="http://www.informatrader.com.br/datafiles/conteudo_downloads/9/Fernando-Ulrich-Bitcoin.pdf">"Bitcoin - a moeda na era digital"</a>)
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="topic intro">
+<h2><strong>Ethereum</strong></h2>
+</section>
+<section>
+<ul>
+<li>
+<strong>Ethereum</strong>
+<ul>
+<li>
+É dinheiro (💲 )!
+</li>
+<li>
+A moeda é chamada de Ether
+</li>
+<li>
+Permite a construção de aplicações descentralizadas (DApps)
+<ul>
+<li>
+Mão na massa (prática) nos próximos slides
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section>
+<ul>
+<li>
+<strong>Ethereum</strong>
+<ul>
+<li>
+Referências:
+<ul>
+<li>
+1. <a href="https://www.youtube.com/watch?v=vam0ZjAy3Rw">What is Ethereum? [For Beginners]</a>
+</li>
+<li>
+2. <a href="https://www.youtube.com/watch?v=U_LK0t_qaPo">DEVCON1: Ethereum for Dummies - Dr. Gavin Wood</a>
+</li>
+<li>
+3. <a href="https://www.youtube.com/watch?v=0ilYnuP1qd4">Joseph Lubin - The Basics of Blockchain and Etherum</a>
+</li>
+</ul>
+</li>
+<li>
+<strong>Ethereum</strong> - explicado de forma mais técnica
+<ul>
+<li>
+1. <a href="https://www.youtube.com/watch?v=-SMliFtoPn8">Dan&#8217;s Intro to How Ethereum Works</a>
+</li>
+</ul>
+</li>
+<li>
+<strong>Ethereum</strong> vs <strong>Bitcoin</strong> - explicado de forma concisa
+<ul>
+<li>
+1. <a href="https://www.youtube.com/watch?v=ptLfwp6JYgk">What is Ethereum? A Simple Explanation Anyone Can Understand</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="topic intro">
+<h2><strong>Hyper ledger</strong></h2>
+</section>
+<section>
+<ul>
+<li>
+<strong>Hyperledger</strong>
+<ul>
+<li>
+Site: <a href="http://hyperledger.com">http://hyperledger.com</a>
+</li>
+<li>
+Iniciativa da Linux Foundation
+<ul>
+<li>
+Apoiada pela IBM e <a href="https://www.hyperledger.org/about/members/vendor-directory">vários outros</a>
+</li>
+</ul>
+</li>
+<li>
+Referências (com foco no desenvolvimento em Java)
+<ul>
+<li>
+<a href="https://www.ibm.com/developerworks/library/j-chaincode-for-java-developers/index.html">Blockchain chaincode for Java developers</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="topic intro">
+<h2><strong>Dev</strong>elopers (agora é mão na massa!)</h2>
+</section>
+<section>
+<ul>
+<li>
+<strong>Ethereum</strong> - como construir uma Dapp
+<ul>
+<li>
+Introduction to Ethereum Smart Contract Development with Solidity
+<ul>
+<li>
+<a href="https://www.youtube.com/watch?v=8jI1TuEaTro">(Part 1)</a>
+</li>
+<li>
+<a href="https://www.youtube.com/watch?v=eS6MSegecH4">(Part 2)</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="https://www.youtube.com/playlist?list=PLH4m2oS2ratdoHFEkGvwvd7TkeTv4sa7Z">Building Ethereum dapp using Solidity</a>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="topic intro">
+<h2><strong>Java Dev</strong></h2>
+</section>
+<section>
+<ul>
+<li>
+<a href="https://web3j.io/">web3j</a>: Web3 Java Ethereum Ðapp API
+<ul>
+<li>
+Referências:
+<ul>
+<li>
+<a href="http://www.javamagazine.mozaicreader.com/JanFeb2017/Default/36">Blockchain: Using Cryptocurrency with Java</a>
+</li>
+<li>
+<a href="https://community.oracle.com/docs/DOC-1011373">Reactive-Functional Fun on the Blockchain with web3j</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="topic intro">
+<h2><strong>Refs</strong></h2>
+</section>
+<section>
+<ul>
+<li>
+<strong>Refs</strong> para aprofundamento
+<ul>
+<li>
+Livro: <a href="https://www.senaispeditora.com.br/catalogo/olhar-para-a-industria/blockchain-revolution/">Blockchain Revolution (versão traduzida)</a>
+</li>
+<li>
+<strong>Blockchain</strong> - conceitos, aplicações, bla, bla, bla &#8230;
+<ul>
+<li>
+1. <a href="https://www.youtube.com/watch?v=93E_GzvpMA0">What is Blockchain</a>
+</li>
+<li>
+2. <a href="https://www.youtube.com/watch?v=SPyIy61Lnrw">Uses of the Blockchain</a>
+</li>
+<li>
+3. <a href="https://www.youtube.com/watch?v=Pl8OlkkwRpc">How the blockchain is changing money and business | Don Tapscott</a>
+</li>
+<li>
+4. <a href="https://www.youtube.com/watch?v=WnEYakUxsHU">Blockchain is Eating Wall Street | Alex Tapscott | TEDxSanFrancisco</a>
+</li>
+<li>
+5. <a href="https://www.youtube.com/watch?v=3PdO7zVqOwc">Alex Tapscott: "Blockchain Revolution" | Talks at Google</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section>
+<ul>
+<li>
+<strong>Refs</strong> para aprofundamento
+<ul>
+<li>
+<strong>Blockchain</strong> - com animaçõeszinhas
+<ul>
+<li>
+1. <a href="https://www.youtube.com/watch?v=r43LhSUUGTQ">Understand the Blockchain in Two Minutes</a>
+</li>
+<li>
+2. <a href="https://www.youtube.com/watch?v=lD9KAnkZUjU">IBM Think Academy: Blockchain, How it works</a>
+</li>
+<li>
+3. <a href="https://www.youtube.com/watch?v=LdOcXXB48fI">Blockchain Demystified</a>
+</li>
+<li>
+4. <a href="https://www.youtube.com/watch?v=C3OTJ1AdraY">The Block Chain - The Basics</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section>
+<ul>
+<li>
+<strong>Refs</strong> para aprofundamento
+<ul>
+<li>
+<strong>Blockchain</strong> - explicado de forma mais técnica
+<ul>
+<li>
+1. <a href="https://www.youtube.com/watch?v=_160oMzblY8">Blockchain 101 - A Visual Demo</a>
+<ul>
+<li>
+Código no GitHub (fork): <a href="https://github.com/blockchain4devs/blockchain-demo">https://github.com/blockchain4devs/blockchain-demo</a>
+</li>
+</ul>
+</li>
+<li>
+2. <a href="https://www.youtube.com/watch?v=GMKgB3zZ1so">How Bitcoin Works in 5 Minutes. (Technical)</a>
+</li>
+<li>
+3. <a href="https://www.youtube.com/watch?v=Lx9zgZCMqXE">How Bitcoin Works Under the Hood</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="topic ending">
+<h2 class="name">That&#8217;s all! <strong>Código desses slides:</strong></h2>
+<p class="footer"><a href="https://github.com/blockchain4devs/dfjug1ano">https://github.com/blockchain4devs/dfjug1ano</a></p>
+</section>
+    <script src="./dzslides/core/dzslides.js"></script>
+    <script src="./dzslides/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
